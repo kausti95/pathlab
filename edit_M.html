@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title> Edit data </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<center>
+<body>
+<div>
+<form action="support_edit.php" method="POST">
+<table align="center">
+<tr>
+<td><input type="text" name="Name" placeholder="First Name" value="<?php echo $row['Name']; ?>"required /></td>
+ </tr>
+<tr>
+<td><input type="text" name="ID" placeholder="ID" value="<?php echo $row['ID']; ?>" required /> </td>
+</tr>
+<tr>
+<td> <input type="text" name="Date" placeholder="Date of Purchase"value="<?php echo $row['Date_of_Purchase']; ?>" required /> </td>
+</tr>
+<tr>
+<td> <input type="text" name="Company" placeholder="Company" value="<?php echo $row['Company']; ?>" required /> </td>
+</tr>
+<tr>
+<td><input type="text" name="Serial" placeholder="Serial Number" value="<?php echo $row['Serial_Number']; ?>" required /> </td>
+</tr>
+<tr>
+ <td colspan="2" > <input type="submit" name="update_button" /> Update </td>
+ <td colspan="2"> <input type="submit" name="cancel_button" /> Cancel </td>
+ </tr>
+ </div>
+ </body>
+ </html>
